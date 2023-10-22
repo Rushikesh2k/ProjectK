@@ -1,24 +1,48 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import DrawerAppBar from "./Navbar";
+import Home from "./Home"
+import Footer from "./Footer"
+import DashBoard from './DashBoard';
+import From from "./From"
+import form2 from "./form2"
+import AdInsights from "./AdsInsights"
+import Submited from './Submited';
+import { Router, Routes, Link, Route, BrowserRouter} from 'react-router-dom';
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+       <DrawerAppBar />
+       {/* <Home/>  */}
+      
+       
+       
+       
+       {/* <DashBoard/> */}
+       <From/>
+       
+       
+       <Footer/>
+       {/* <Submited/> */}
+    
     </div>
+    
+    
+      
+    
+
+    
+   
+        
+
+    
+    
+    
+ 
+    
   );
 }
 
